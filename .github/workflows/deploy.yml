@@ -23,7 +23,7 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Install Chakra UI
-        run: npm install @chakra-ui/react
+        run: npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
       - name: Build project
         run: npm run build
