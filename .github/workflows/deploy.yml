@@ -22,14 +22,8 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Install Chakra UI
-        run: yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion
-
-      - name: Install Chakra UI Icons
-        run: yarn add @chakra-ui/icons
-
       - name: Build project
-        run: npm run build
+        run: vite build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
