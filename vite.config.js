@@ -7,7 +7,7 @@ export default defineConfig({
 	base: "/rc-chess/",
 	build: {
 		rollupOptions: {
-			external: ["chakra-ui@react"],
+			external: ["@chakra-ui/react"],
 		},
 	},
 });
